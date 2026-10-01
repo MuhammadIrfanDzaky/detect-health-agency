@@ -109,39 +109,39 @@
     },
     "details": {
       "sunwayPenang": {
-        "about": "Rumah sakit swasta modern di Seberang Jaya, Penang, bagian dari Sunway Healthcare Group. Dirancang untuk menangani kasus medis yang kompleks.",
+        "about": "Rumah sakit swasta modern di Seberang Jaya, Penang, bagian dari Sunway Healthcare Group.",
         "points": [
           "Pelopor bedah berbantuan robot dan alat pemindaian canggih.",
-          "Layanan lengkap untuk kanker, saraf, ortopedi (bedah tulang), dan jantung.",
+          "Layanan lengkap untuk kanker, saraf, ortopedi (tulang dan sendi), dan jantung.",
           "Ratusan tempat tidur dengan pelayanan yang cepat dan tertata."
         ]
       },
       "northernHeart": {
         "about": "Rumah sakit khusus jantung dan pembuluh darah pertama di wilayah utara Malaysia.",
         "points": [
-          "Fokus pada jantung (kardiologi), bedah jantung dan rongga dada, serta tindakan pembuluh darah.",
-          "Ruang kateterisasi jantung (Cath Lab) modern dan ruang operasi khusus jantung, untuk kasus darurat maupun terjadwal.",
+          "Ruang kateterisasi jantung (Cath Lab) modern, untuk kasus darurat maupun terjadwal.",
+          "Ruang operasi khusus untuk bedah jantung dan rongga dada.",
           "Ditangani langsung oleh dokter spesialis dan konsultan jantung senior."
         ]
       },
       "optimax": {
-        "about": "Rumah sakit khusus mata terkemuka di Malaysia, berfokus pada perawatan penglihatan dan bedah koreksi mata modern.",
+        "about": "Salah satu rumah sakit khusus mata terkemuka di Malaysia.",
         "points": [
-          "Pelopor koreksi penglihatan dengan laser (LASIK, ReLEx SMILE) dan bedah katarak canggih.",
+          "Pelopor koreksi penglihatan dengan laser (LASIK, ReLEx SMILE) dan bedah katarak modern.",
           "Menangani penyakit mata yang kompleks: glaukoma, retina, mata anak, dan tumor mata.",
           "Peralatan pemeriksaan mata dengan ketelitian tinggi."
         ]
       },
       "gleneaglesKL": {
-        "about": "Rumah sakit berstandar internasional dengan akreditasi Joint Commission International (JCI). Salah satu rumah sakit paling ternama dan tepercaya di Kuala Lumpur.",
+        "about": "Salah satu rumah sakit paling ternama di Kuala Lumpur, terakreditasi Joint Commission International (JCI), standar mutu rumah sakit internasional.",
         "points": [
           "Unggul untuk kasus kompleks: saraf dan bedah saraf, jantung, serta pusat kanker terpadu.",
-          "Teknologi medis mutakhir dan ruang perawatan intensif (ICU/CCU) berstandar dunia.",
-          "Rawat inap kelas dunia dengan tim dokter spesialis dari berbagai bidang."
+          "Ruang perawatan intensif (ICU/CCU) dengan teknologi medis mutakhir.",
+          "Tim dokter spesialis dari berbagai bidang dalam satu rumah sakit."
         ]
       },
       "pantaiKL": {
-        "about": "Berdiri sejak 1974 dan bagian dari IHH Healthcare. Salah satu pelopor rumah sakit swasta paling berpengalaman di Kuala Lumpur.",
+        "about": "Berdiri sejak 1974, salah satu rumah sakit swasta paling berpengalaman di Kuala Lumpur. Bagian dari IHH Healthcare.",
         "points": [
           "Pusat unggulan kanker, ortopedi dan trauma, jantung, serta kesehatan ibu dan anak.",
           "Terakreditasi JCI dan MSQH (Malaysian Society for Quality in Health).",
@@ -149,11 +149,11 @@
         ]
       },
       "pantaiMelaka": {
-        "about": "Rumah sakit rujukan unggulan di Melaka, bagian dari IHH Healthcare, salah satu jaringan rumah sakit terbesar di Asia. Menjadi tujuan pasien dari dalam dan luar negeri.",
+        "about": "Rumah sakit rujukan unggulan di Melaka, bagian dari IHH Healthcare, salah satu jaringan rumah sakit terbesar di Asia.",
         "points": [
-          "Pusat unggulan kanker, jantung, ortopedi (bedah tulang), serta kesehatan wanita dan anak.",
-          "Lebih dari 200 tempat tidur dan lebih dari 80 dokter spesialis berakreditasi internasional.",
-          "Perawatan lengkap di lingkungan kota yang tenang."
+          "Pusat unggulan kanker, jantung, ortopedi, serta kesehatan wanita dan anak.",
+          "Lebih dari 200 tempat tidur dan lebih dari 80 dokter spesialis.",
+          "Kota yang tenang dan dekat dari Sumatra, nyaman untuk kontrol rutin."
         ]
       }
     },
@@ -219,9 +219,61 @@
   },
   "testimonial": {
     "label": "Cerita pasien",
-    "quote": "Dari booking dokter sampai dijemput di bandara, semuanya diurus. Saya cukup fokus berobat.",
-    "name": "Rahmawati Siregar",
-    "role": "Pasien medical check-up di Penang, dari Medan"
+    "previous": "Cerita sebelumnya",
+    "next": "Cerita berikutnya",
+    "region": "Daftar cerita pasien, geser untuk melihat lainnya",
+    "items": [
+      {
+        "quote": "Dari booking dokter sampai dijemput di bandara, semuanya diurus. Saya cukup fokus berobat.",
+        "name": "Rahmawati Siregar",
+        "role": "Medical check-up di Sunway Medical Centre, Penang. Dari Medan."
+      },
+      {
+        "quote": "Saya takut sekali waktu tahu harus tindakan jantung. Tim DHA menjelaskan setiap langkah dengan sabar, jadi saya berangkat dengan tenang.",
+        "name": "Hendra Gunawan",
+        "role": "Pemasangan ring jantung di Northern Heart Hospital, Penang. Dari Binjai."
+      },
+      {
+        "quote": "Umur saya 67 tahun dan baru pertama kali ke luar negeri. Sudah ada yang menunggu di bandara, jadi saya tidak bingung sama sekali.",
+        "name": "Nurhayati",
+        "role": "Operasi katarak di Optimax Eye Specialist Hospital, Penang. Dari Pematangsiantar."
+      },
+      {
+        "quote": "Jadwal dokter spesialisnya sudah diatur sebelum saya berangkat. Sampai di Kuala Lumpur, saya tinggal datang sesuai jam.",
+        "name": "Ahmad Fauzi",
+        "role": "Konsultasi dokter saraf di Gleneagles Hospital, Kuala Lumpur. Dari Pekanbaru."
+      },
+      {
+        "quote": "Waktu jadwal operasi harus mundur, DHA langsung mengatur ulang dokter dan hotelnya. Saya tidak perlu repot menelepon sendiri.",
+        "name": "Lina Marpaung",
+        "role": "Operasi lutut di Pantai Hospital, Kuala Lumpur. Dari Batam."
+      },
+      {
+        "quote": "Saya kontrol rutin ke Melaka. Setiap kali datang semuanya sudah siap, jadi tenaga saya tidak habis di perjalanan.",
+        "name": "Siti Aminah",
+        "role": "Kontrol kanker di Pantai Hospital, Melaka. Dari Dumai."
+      },
+      {
+        "quote": "Pagi kami check-up, sorenya sudah jalan-jalan di George Town. Hasilnya dijelaskan dokter di hari yang sama.",
+        "name": "Darwin Sembiring",
+        "role": "Medical check-up bersama istri di Sunway Medical Centre, Penang. Dari Kabanjahe."
+      },
+      {
+        "quote": "Semua pertanyaan saya di WhatsApp dijawab dengan jelas, bahkan sebelum saya memutuskan berangkat. Tidak ada paksaan sama sekali.",
+        "name": "Rudi Hartono",
+        "role": "LASIK di Optimax Eye Specialist Hospital, Penang. Dari Banda Aceh."
+      },
+      {
+        "quote": "Anak-anak saya tidak bisa ikut, jadi saya berangkat sendiri. Selama di sana saya selalu tahu harus menghubungi siapa.",
+        "name": "Yuliana Tan",
+        "role": "Pemeriksaan jantung di Gleneagles Hospital, Kuala Lumpur. Dari Palembang."
+      },
+      {
+        "quote": "Hotel yang direkomendasikan dekat sekali dengan rumah sakit. Ibu saya yang ikut menemani juga merasa nyaman.",
+        "name": "Dewi Lestari",
+        "role": "Pemeriksaan kesehatan wanita di Pantai Hospital, Melaka. Dari Padang."
+      }
+    ]
   },
   "faq": {
     "title": "Pertanyaan yang sering diajukan",

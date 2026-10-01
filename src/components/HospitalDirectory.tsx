@@ -1,5 +1,6 @@
 "use client";
 
+import { X } from "@phosphor-icons/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -8,6 +9,8 @@ export type HospitalItem = {
   name: string;
   city: string;
   logo: string | null;
+  // Short summary for the card only. The dialog shows `about` + `points`
+  // instead, so the same facts are not repeated.
   specialty: string;
   photo: string;
   photoAlt: string;
@@ -107,45 +110,50 @@ export function HospitalDirectory({ items, labels }: { items: HospitalItem[]; la
         className="hospital-dialog m-auto w-[min(44rem,calc(100%-2rem))] overflow-hidden rounded-2xl bg-bg p-0 text-ink shadow-soft backdrop:bg-ink/40"
       >
         {active ? (
-          <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto">
-            <div className="relative h-48 bg-tint-strong sm:h-60">
-              <Image src={active.photo} alt={active.photoAlt} fill loading="eager" sizes="(min-width: 768px) 44rem, 100vw" className="object-cover" />
+          <>
+            {/* Close: fixed to the dialog's top-right corner (outside the
+                scrolling area) so it stays in reach. First in DOM, so it also
+                receives focus when the dialog opens. */}
+            <button
+              type="button"
+              onClick={close}
+              aria-label={labels.close}
+              title={labels.close}
+              className="absolute top-3 right-3 z-10 flex size-14 items-center justify-center rounded-full bg-bg text-ink shadow-soft ring-1 ring-rule transition-colors hover:bg-ink hover:text-bg"
+            >
+              <X size={28} weight="bold" aria-hidden="true" />
+            </button>
+            <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto">
+              <div className="relative h-48 bg-tint-strong sm:h-60">
+                <Image src={active.photo} alt={active.photoAlt} fill loading="eager" sizes="(min-width: 768px) 44rem, 100vw" className="object-cover" />
+              </div>
+
+              <div className="p-6 sm:p-8">
+                {active.logo ? (
+                  <Image src={active.logo} alt="" width={240} height={64} className="h-12 w-auto max-w-[14rem] object-contain object-left" />
+                ) : null}
+                <h3 id="hospital-dialog-title" className="mt-5 text-2xl font-semibold text-ink md:text-3xl">
+                  {active.name}
+                </h3>
+                <p className="mt-1 text-lg font-medium text-accent-strong">{active.city}</p>
+
+                {active.about ? (
+                  <>
+                    <p className="mt-5 text-lg leading-relaxed text-ink">{active.about}</p>
+                    <h4 className="mt-7 border-b-2 border-brand pb-2 text-xl font-semibold text-ink">{labels.advantages}</h4>
+                    <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-ink marker:text-brand">
+                      {active.points.map((point) => (
+                        <li key={point} className="pl-1">{point}</li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  // PLACEHOLDER: details for this hospital not provided yet.
+                  <p className="mt-5 rounded-2xl bg-tint p-4 text-lg text-ink">{labels.detailsPending}</p>
+                )}
+              </div>
             </div>
-
-            <div className="p-6 sm:p-8">
-              {active.logo ? (
-                <Image src={active.logo} alt="" width={240} height={64} className="h-12 w-auto max-w-[14rem] object-contain object-left" />
-              ) : null}
-              <h3 id="hospital-dialog-title" className="mt-5 text-2xl font-semibold text-ink md:text-3xl">
-                {active.name}
-              </h3>
-              <p className="mt-1 text-lg font-medium text-accent-strong">{active.city}</p>
-              <p className="mt-4 text-lg text-ink-soft">{active.specialty}</p>
-
-              {active.about ? (
-                <>
-                  <p className="mt-5 text-lg leading-relaxed text-ink">{active.about}</p>
-                  <h4 className="mt-7 border-b-2 border-brand pb-2 text-xl font-semibold text-ink">{labels.advantages}</h4>
-                  <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-ink marker:text-brand">
-                    {active.points.map((point) => (
-                      <li key={point} className="pl-1">{point}</li>
-                    ))}
-                  </ul>
-                </>
-              ) : (
-                // PLACEHOLDER: details for this hospital not provided yet.
-                <p className="mt-5 rounded-2xl bg-tint p-4 text-lg text-ink">{labels.detailsPending}</p>
-              )}
-
-              <button
-                type="button"
-                onClick={close}
-                className="mt-8 inline-flex min-h-14 w-full items-center justify-center rounded-full border-2 border-ink text-lg font-semibold text-ink transition-colors hover:bg-ink hover:text-bg sm:w-auto sm:px-10"
-              >
-                {labels.close}
-              </button>
-            </div>
-          </div>
+          </>
         ) : null}
       </dialog>
     </>

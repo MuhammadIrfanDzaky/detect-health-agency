@@ -109,7 +109,7 @@
     },
     "details": {
       "sunwayPenang": {
-        "about": "A modern private hospital in Seberang Jaya, Penang, part of Sunway Healthcare Group. Built to handle complex medical cases.",
+        "about": "A modern private hospital in Seberang Jaya, Penang, part of Sunway Healthcare Group.",
         "points": [
           "A pioneer in robot-assisted surgery and advanced imaging.",
           "Comprehensive care for cancer, neurology, orthopaedics (bones and joints), and heart.",
@@ -119,29 +119,29 @@
       "northernHeart": {
         "about": "The first hospital in northern Malaysia dedicated to the heart and blood vessels.",
         "points": [
-          "Focused on cardiology, heart and chest surgery, and vascular procedures.",
-          "A modern cardiac catheterisation lab (cath lab) and dedicated heart theatres, for emergencies and planned procedures.",
+          "A modern cardiac catheterisation lab (cath lab), for emergencies and planned procedures.",
+          "Dedicated operating theatres for heart and chest surgery.",
           "Care directly from specialist doctors and senior consultant cardiologists."
         ]
       },
       "optimax": {
-        "about": "A leading eye specialist hospital in Malaysia, focused on vision care and modern corrective eye surgery.",
+        "about": "One of Malaysia's leading eye specialist hospitals.",
         "points": [
-          "A pioneer in laser vision correction (LASIK, ReLEx SMILE) and advanced cataract surgery.",
+          "A pioneer in laser vision correction (LASIK, ReLEx SMILE) and modern cataract surgery.",
           "Treats complex eye conditions: glaucoma, retina, children's eyes, and eye tumours.",
           "High-precision eye examination equipment."
         ]
       },
       "gleneaglesKL": {
-        "about": "An international-standard hospital accredited by Joint Commission International (JCI). One of the best-known and most trusted hospitals in Kuala Lumpur.",
+        "about": "One of the best-known hospitals in Kuala Lumpur, accredited by Joint Commission International (JCI), an international hospital quality standard.",
         "points": [
           "Excellent for complex cases: neurology and neurosurgery, heart, and an integrated cancer centre.",
-          "Advanced medical technology and world-standard intensive care (ICU/CCU).",
-          "World-class inpatient care with specialists across many fields."
+          "Intensive care (ICU/CCU) with advanced medical technology.",
+          "Specialists from many fields under one roof."
         ]
       },
       "pantaiKL": {
-        "about": "Founded in 1974 and part of IHH Healthcare. One of the most experienced private hospital pioneers in Kuala Lumpur.",
+        "about": "Founded in 1974, one of the most experienced private hospitals in Kuala Lumpur. Part of IHH Healthcare.",
         "points": [
           "Centres of excellence for cancer, orthopaedics and trauma, heart, and mother and child health.",
           "Accredited by JCI and MSQH (Malaysian Society for Quality in Health).",
@@ -149,11 +149,11 @@
         ]
       },
       "pantaiMelaka": {
-        "about": "Melaka's leading referral hospital, part of IHH Healthcare, one of the largest hospital networks in Asia. Chosen by patients from home and abroad.",
+        "about": "Melaka's leading referral hospital, part of IHH Healthcare, one of the largest hospital networks in Asia.",
         "points": [
-          "Centres of excellence for cancer, heart, orthopaedics (bones and joints), and women's and children's health.",
-          "More than 200 beds and more than 80 internationally accredited specialists.",
-          "Complete care in a calm city setting."
+          "Centres of excellence for cancer, heart, orthopaedics, and women's and children's health.",
+          "More than 200 beds and more than 80 specialists.",
+          "A calm city close to Sumatra, convenient for regular check-ups."
         ]
       }
     },
@@ -218,10 +218,62 @@
     ]
   },
   "testimonial": {
-    "label": "Patient story",
-    "quote": "From booking the doctor to the airport pickup, everything was handled. I just focused on my treatment.",
-    "name": "Rahmawati Siregar",
-    "role": "Check-up patient in Penang, from Medan"
+    "label": "Patient stories",
+    "previous": "Previous stories",
+    "next": "Next stories",
+    "region": "Patient stories, scroll to see more",
+    "items": [
+      {
+        "quote": "From booking the doctor to the airport pickup, everything was handled. I just focused on my treatment.",
+        "name": "Rahmawati Siregar",
+        "role": "Medical check-up at Sunway Medical Centre, Penang. From Medan."
+      },
+      {
+        "quote": "I was very scared when I learned I needed a heart procedure. The DHA team explained every step patiently, so I left feeling calm.",
+        "name": "Hendra Gunawan",
+        "role": "Heart stent at Northern Heart Hospital, Penang. From Binjai."
+      },
+      {
+        "quote": "I am 67 and it was my first trip abroad. Someone was already waiting at the airport, so I was never confused.",
+        "name": "Nurhayati",
+        "role": "Cataract surgery at Optimax Eye Specialist Hospital, Penang. From Pematangsiantar."
+      },
+      {
+        "quote": "My specialist appointment was set before I left. In Kuala Lumpur I only had to show up on time.",
+        "name": "Ahmad Fauzi",
+        "role": "Neurology consultation at Gleneagles Hospital, Kuala Lumpur. From Pekanbaru."
+      },
+      {
+        "quote": "When my surgery date had to move, DHA rearranged the doctor and the hotel right away. I did not have to make a single call.",
+        "name": "Lina Marpaung",
+        "role": "Knee surgery at Pantai Hospital, Kuala Lumpur. From Batam."
+      },
+      {
+        "quote": "I go to Melaka for regular check-ups. Every time, everything is ready, so I do not wear myself out on the trip.",
+        "name": "Siti Aminah",
+        "role": "Cancer follow-up at Pantai Hospital, Melaka. From Dumai."
+      },
+      {
+        "quote": "We had our check-up in the morning and walked around George Town in the afternoon. The doctor explained the results the same day.",
+        "name": "Darwin Sembiring",
+        "role": "Medical check-up with his wife at Sunway Medical Centre, Penang. From Kabanjahe."
+      },
+      {
+        "quote": "Every question I sent on WhatsApp got a clear answer, even before I decided to go. There was no pressure at all.",
+        "name": "Rudi Hartono",
+        "role": "LASIK at Optimax Eye Specialist Hospital, Penang. From Banda Aceh."
+      },
+      {
+        "quote": "My children could not come, so I travelled alone. The whole time, I always knew who to contact.",
+        "name": "Yuliana Tan",
+        "role": "Heart check at Gleneagles Hospital, Kuala Lumpur. From Palembang."
+      },
+      {
+        "quote": "The recommended hotel was very close to the hospital. My mother, who came with me, felt comfortable too.",
+        "name": "Dewi Lestari",
+        "role": "Women's health check at Pantai Hospital, Melaka. From Padang."
+      }
+    ]
   },
   "faq": {
     "title": "Frequently asked questions",

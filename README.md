@@ -24,7 +24,8 @@ npm run lint
 | WhatsApp number, email, Google Form link, Instagram, Facebook | `src/content/site.ts` |
 | WhatsApp prefilled greeting | `src/content/site.ts` → `whatsappGreeting` |
 | Partner hospitals (name, city, logo) | `src/content/hospitals.ts` |
-| Hospital descriptions | `messages/*.json` → `hospitals.specialties` |
+| Hospital card summary (one line) | `messages/*.json` → `hospitals.specialties` |
+| Hospital profile in the dialog | `messages/*.json` → `hospitals.details` |
 | Colors | `src/app/globals.css` → `@theme` |
 
 After editing, run `npm run build` to make sure nothing broke.
@@ -39,7 +40,7 @@ After editing, run `npm run build` to make sure nothing broke.
 
 ### Partner hospitals section
 
-All six hospitals show as one grid of cards (logo, name, city, specialty). Clicking a card opens a detail dialog (`src/components/HospitalDirectory.tsx`) with a photo, the description, and the "Kelebihan" list.
+All six hospitals show as one grid of cards (logo, name, city, one-line specialty). Clicking a card opens a detail dialog (`src/components/HospitalDirectory.tsx`) with a photo, a short `about`, and the "Kelebihan" list. The dialog does not repeat the card's specialty line, and `about` (who and where) should not repeat the `points` (strengths).
 
 - Details: in `messages/id.json` and `messages/en.json`, add `hospitals.details.<hospitalId>` with an `about` sentence and a `points` list. Hospitals without details show a "coming soon, ask us on WhatsApp" note.
 - Photos: hospital building photos (from DHA) live in `public/partners/photos/<id>.webp` and are set as `photo` in `src/content/hospitals.ts`. Convert new photos to WebP (about 860px wide) before adding them. If `photo` is null, the dialog shows the city photo.
@@ -51,7 +52,7 @@ Mock content is marked on the page with a **Contoh / Sample** badge.
 
 | Item | Where |
 |---|---|
-| Testimonial (invented name; needs a real patient with consent) | `messages/*.json` -> `testimonial` |
+| 10 testimonials (invented names; need real patients with consent) | `messages/*.json` -> `testimonial.items` |
 | FAQ | `messages/*.json` -> `faq` |
 | Opening hours and WhatsApp response time | `messages/*.json` -> `footer.hoursValue`, `footer.responseTime` |
 | Photos (Unsplash stock, see below) | `src/content/photos.ts` |
@@ -72,6 +73,7 @@ Audience is adults 30+ and seniors, so accessibility decides over aesthetics:
 - Sections alternate white and light blue, each heading starts with a short blue bar.
 - Hero answers "what is DHA" at once: photo with white fade, big WhatsApp button, visible phone number, then a blue strip with three facts.
 - Numbered steps for "how it works". No scroll animations.
+- Testimonials stay low-key: a smaller heading and one row of short cards with previous/next arrows (swipe on phones), not a highlight section.
 - No prices anywhere. "Free consultation and support" is fine (confirmed by DHA).
 - Stack: Tailwind v4 tokens in `src/app/globals.css`, Geist font, Phosphor icons.
 
