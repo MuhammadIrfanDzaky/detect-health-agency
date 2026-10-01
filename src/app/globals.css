@@ -77,6 +77,33 @@ html[data-hero-cta="visible"] .after-hero {
   visibility: hidden;
 }
 
+/* Hospital detail dialog: fade + slight rise on open, reverse on close. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.97);
+    }
+  }
+  @keyframes backdrop-in {
+    from {
+      opacity: 0;
+    }
+  }
+  .hospital-dialog[open] {
+    animation: dialog-in 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hospital-dialog[open]::backdrop {
+    animation: backdrop-in 220ms ease-out;
+  }
+  .hospital-dialog[data-closing] {
+    animation: dialog-in 180ms ease-in reverse forwards;
+  }
+  .hospital-dialog[data-closing]::backdrop {
+    animation: backdrop-in 180ms ease-in reverse forwards;
+  }
+}
+
 @utility shadow-soft {
   box-shadow: 0 20px 44px -26px rgb(24 82 149 / 0.35);
 }

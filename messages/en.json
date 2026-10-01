@@ -100,33 +100,69 @@
       "melaka": "The historic red church in central Melaka"
     },
     "specialties": {
-      "pantaiMelaka": "Cancer, heart, orthopaedics, women's and children's health",
-      "sunwayPenang": "Modern facilities and advanced surgery",
+      "sunwayPenang": "Robotic surgery, cancer, neurology, orthopaedics, and heart",
       "northernHeart": "A hospital dedicated to the heart and blood vessels",
-      "optimax": "Eye care and eye surgery (LASIK)",
-      "gleneaglesKL": "Complex, neuro, and cardiac cases",
-      "pantaiKL": "Oncology, orthopaedics, women's and children's health"
+      "optimax": "Eye specialist hospital: LASIK, cataract, glaucoma, retina",
+      "gleneaglesKL": "Complex cases: neurology, heart, and cancer",
+      "pantaiKL": "Cancer, orthopaedics, heart, mother and child health",
+      "pantaiMelaka": "Cancer, heart, orthopaedics, women's and children's health"
     },
     "details": {
-      "pantaiMelaka": {
-        "about": "Melaka's leading referral hospital, part of IHH Healthcare, one of the largest hospital networks in Asia.",
+      "sunwayPenang": {
+        "about": "A modern private hospital in Seberang Jaya, Penang, part of Sunway Healthcare Group. Built to handle complex medical cases.",
         "points": [
-          "More than 200 beds.",
-          "More than 80 internationally accredited specialists.",
-          "A calm city setting."
+          "A pioneer in robot-assisted surgery and advanced imaging.",
+          "Comprehensive care for cancer, neurology, orthopaedics (bones and joints), and heart.",
+          "Hundreds of beds with fast, well-organised service."
         ]
       },
       "northernHeart": {
-        "about": "The first dedicated heart hospital in northern Malaysia.",
+        "about": "The first hospital in northern Malaysia dedicated to the heart and blood vessels.",
         "points": [
-          "Cardiology, heart and lung surgery, and vascular procedures.",
-          "A modern cath lab and dedicated cardiac operating theatres.",
-          "Care from senior consultant cardiologists."
+          "Focused on cardiology, heart and chest surgery, and vascular procedures.",
+          "A modern cardiac catheterisation lab (cath lab) and dedicated heart theatres, for emergencies and planned procedures.",
+          "Care directly from specialist doctors and senior consultant cardiologists."
+        ]
+      },
+      "optimax": {
+        "about": "A leading eye specialist hospital in Malaysia, focused on vision care and modern corrective eye surgery.",
+        "points": [
+          "A pioneer in laser vision correction (LASIK, ReLEx SMILE) and advanced cataract surgery.",
+          "Treats complex eye conditions: glaucoma, retina, children's eyes, and eye tumours.",
+          "High-precision eye examination equipment."
+        ]
+      },
+      "gleneaglesKL": {
+        "about": "An international-standard hospital accredited by Joint Commission International (JCI). One of the best-known and most trusted hospitals in Kuala Lumpur.",
+        "points": [
+          "Excellent for complex cases: neurology and neurosurgery, heart, and an integrated cancer centre.",
+          "Advanced medical technology and world-standard intensive care (ICU/CCU).",
+          "World-class inpatient care with specialists across many fields."
+        ]
+      },
+      "pantaiKL": {
+        "about": "Founded in 1974 and part of IHH Healthcare. One of the most experienced private hospital pioneers in Kuala Lumpur.",
+        "points": [
+          "Centres of excellence for cancer, orthopaedics and trauma, heart, and mother and child health.",
+          "Accredited by JCI and MSQH (Malaysian Society for Quality in Health).",
+          "Supported by more than 200 specialists and sub-specialists."
+        ]
+      },
+      "pantaiMelaka": {
+        "about": "Melaka's leading referral hospital, part of IHH Healthcare, one of the largest hospital networks in Asia. Chosen by patients from home and abroad.",
+        "points": [
+          "Centres of excellence for cancer, heart, orthopaedics (bones and joints), and women's and children's health.",
+          "More than 200 beds and more than 80 internationally accredited specialists.",
+          "Complete care in a calm city setting."
         ]
       }
     },
-    "count": "{count, plural, one {# hospital} other {# hospitals}}",
-    "more": "More details"
+    "advantages": "Highlights",
+    "viewDetails": "View details",
+    "close": "Close",
+    "detailsPending": "Full details for this hospital are coming soon. Ask us directly on WhatsApp.",
+    "cityLabel": "City",
+    "buildingAlt": "The {name} building"
   },
   "itinerary": {
     "title": "How it works, from start to finish",

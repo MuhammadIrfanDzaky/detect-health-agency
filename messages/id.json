@@ -100,33 +100,69 @@
       "melaka": "Gereja merah bersejarah di pusat kota Melaka"
     },
     "specialties": {
-      "pantaiMelaka": "Kanker, jantung, ortopedi, kesehatan wanita dan anak",
-      "sunwayPenang": "Fasilitas modern dan bedah canggih",
+      "sunwayPenang": "Bedah robotik, kanker, saraf, ortopedi, dan jantung",
       "northernHeart": "Rumah sakit khusus jantung dan pembuluh darah",
-      "optimax": "Perawatan dan bedah mata (LASIK)",
-      "gleneaglesKL": "Kasus kompleks, saraf, dan jantung",
-      "pantaiKL": "Kanker, ortopedi, kesehatan wanita dan anak"
+      "optimax": "Rumah sakit khusus mata: LASIK, katarak, glaukoma, retina",
+      "gleneaglesKL": "Kasus kompleks: saraf, jantung, dan kanker",
+      "pantaiKL": "Kanker, ortopedi, jantung, kesehatan ibu dan anak",
+      "pantaiMelaka": "Kanker, jantung, ortopedi, kesehatan wanita dan anak"
     },
     "details": {
-      "pantaiMelaka": {
-        "about": "Rumah sakit rujukan utama di Melaka, bagian dari IHH Healthcare, salah satu jaringan rumah sakit terbesar di Asia.",
+      "sunwayPenang": {
+        "about": "Rumah sakit swasta modern di Seberang Jaya, Penang, bagian dari Sunway Healthcare Group. Dirancang untuk menangani kasus medis yang kompleks.",
         "points": [
-          "Lebih dari 200 tempat tidur.",
-          "Lebih dari 80 dokter spesialis berakreditasi internasional.",
-          "Lingkungan kota yang tenang."
+          "Pelopor bedah berbantuan robot dan alat pemindaian canggih.",
+          "Layanan lengkap untuk kanker, saraf, ortopedi (bedah tulang), dan jantung.",
+          "Ratusan tempat tidur dengan pelayanan yang cepat dan tertata."
         ]
       },
       "northernHeart": {
-        "about": "Rumah sakit khusus jantung pertama di utara Malaysia.",
+        "about": "Rumah sakit khusus jantung dan pembuluh darah pertama di wilayah utara Malaysia.",
         "points": [
-          "Kardiologi, bedah jantung dan paru, serta tindakan pembuluh darah.",
-          "Cath Lab modern dan ruang operasi khusus jantung.",
-          "Ditangani dokter konsultan jantung senior."
+          "Fokus pada jantung (kardiologi), bedah jantung dan rongga dada, serta tindakan pembuluh darah.",
+          "Ruang kateterisasi jantung (Cath Lab) modern dan ruang operasi khusus jantung, untuk kasus darurat maupun terjadwal.",
+          "Ditangani langsung oleh dokter spesialis dan konsultan jantung senior."
+        ]
+      },
+      "optimax": {
+        "about": "Rumah sakit khusus mata terkemuka di Malaysia, berfokus pada perawatan penglihatan dan bedah koreksi mata modern.",
+        "points": [
+          "Pelopor koreksi penglihatan dengan laser (LASIK, ReLEx SMILE) dan bedah katarak canggih.",
+          "Menangani penyakit mata yang kompleks: glaukoma, retina, mata anak, dan tumor mata.",
+          "Peralatan pemeriksaan mata dengan ketelitian tinggi."
+        ]
+      },
+      "gleneaglesKL": {
+        "about": "Rumah sakit berstandar internasional dengan akreditasi Joint Commission International (JCI). Salah satu rumah sakit paling ternama dan tepercaya di Kuala Lumpur.",
+        "points": [
+          "Unggul untuk kasus kompleks: saraf dan bedah saraf, jantung, serta pusat kanker terpadu.",
+          "Teknologi medis mutakhir dan ruang perawatan intensif (ICU/CCU) berstandar dunia.",
+          "Rawat inap kelas dunia dengan tim dokter spesialis dari berbagai bidang."
+        ]
+      },
+      "pantaiKL": {
+        "about": "Berdiri sejak 1974 dan bagian dari IHH Healthcare. Salah satu pelopor rumah sakit swasta paling berpengalaman di Kuala Lumpur.",
+        "points": [
+          "Pusat unggulan kanker, ortopedi dan trauma, jantung, serta kesehatan ibu dan anak.",
+          "Terakreditasi JCI dan MSQH (Malaysian Society for Quality in Health).",
+          "Didukung lebih dari 200 dokter spesialis dan subspesialis."
+        ]
+      },
+      "pantaiMelaka": {
+        "about": "Rumah sakit rujukan unggulan di Melaka, bagian dari IHH Healthcare, salah satu jaringan rumah sakit terbesar di Asia. Menjadi tujuan pasien dari dalam dan luar negeri.",
+        "points": [
+          "Pusat unggulan kanker, jantung, ortopedi (bedah tulang), serta kesehatan wanita dan anak.",
+          "Lebih dari 200 tempat tidur dan lebih dari 80 dokter spesialis berakreditasi internasional.",
+          "Perawatan lengkap di lingkungan kota yang tenang."
         ]
       }
     },
-    "count": "{count} rumah sakit",
-    "more": "Selengkapnya"
+    "advantages": "Kelebihan",
+    "viewDetails": "Lihat detail",
+    "close": "Tutup",
+    "detailsPending": "Informasi lengkap rumah sakit ini akan segera kami tambahkan. Tanyakan langsung lewat WhatsApp.",
+    "cityLabel": "Kota",
+    "buildingAlt": "Gedung {name}"
   },
   "itinerary": {
     "title": "Cara kerjanya, dari awal sampai pulang",

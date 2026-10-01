@@ -37,9 +37,13 @@ After editing, run `npm run build` to make sure nothing broke.
 - All logo PNGs had their white background made transparent and their margins trimmed. Originals stay in DHA's Canva.
 - Brand blue `#4A90E2` (`--brand`) is used for icons and accents only; it is too light for white text, so buttons and links use darker shades of the same hue (`--accent`, `--accent-strong`).
 
-### Adding hospital details
+### Partner hospitals section
 
-In `messages/id.json` and `messages/en.json`, add `hospitals.details.<hospitalId>` with an `about` sentence and a `points` list. The card shows it automatically.
+All six hospitals show as one grid of cards (logo, name, city, specialty). Clicking a card opens a detail dialog (`src/components/HospitalDirectory.tsx`) with a photo, the description, and the "Kelebihan" list.
+
+- Details: in `messages/id.json` and `messages/en.json`, add `hospitals.details.<hospitalId>` with an `about` sentence and a `points` list. Hospitals without details show a "coming soon, ask us on WhatsApp" note.
+- Photos: hospital building photos (from DHA) live in `public/partners/photos/<id>.webp` and are set as `photo` in `src/content/hospitals.ts`. Convert new photos to WebP (about 860px wide) before adding them. If `photo` is null, the dialog shows the city photo.
+- Source text for the profiles is DHA's `hospital.md` (kept out of git). The site copy is a lightly simplified version, with prices removed.
 
 ## Placeholders still to replace
 
@@ -47,7 +51,6 @@ Mock content is marked on the page with a **Contoh / Sample** badge.
 
 | Item | Where |
 |---|---|
-| Hospital details for Sunway, Optimax, Gleneagles, Pantai KL (only Pantai Melaka and Northern Heart have them) | `messages/*.json` -> `hospitals.details.<id>` (`about` + `points`) |
 | Testimonial (invented name; needs a real patient with consent) | `messages/*.json` -> `testimonial` |
 | FAQ | `messages/*.json` -> `faq` |
 | Opening hours and WhatsApp response time | `messages/*.json` -> `footer.hoursValue`, `footer.responseTime` |
