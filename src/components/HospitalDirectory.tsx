@@ -32,37 +32,83 @@ type Labels = {
 export function HospitalDirectory({ items, labels }: { items: HospitalItem[]; labels: Labels }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const closeTimerRef = useRef<number | null>(null);
+  // Page overflow before the dialog locked it, restored on every close path.
+  const prevOverflowRef = useRef<string | null>(null);
   const [active, setActive] = useState<HospitalItem | null>(null);
+  // Mirrors `active` synchronously: the dialog's close event fires after a
+  // task, so state alone cannot tell whether finish() already ran.
+  const isOpenRef = useRef(false);
+
+  function cancelCloseTimer() {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  }
+
+  function unlockScroll() {
+    if (prevOverflowRef.current !== null) {
+      document.documentElement.style.overflow = prevOverflowRef.current;
+      prevOverflowRef.current = null;
+    }
+  }
 
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;
     if (active && !dialog.open) {
       dialog.showModal();
-      document.documentElement.style.overflow = "hidden";
+      if (prevOverflowRef.current === null) {
+        prevOverflowRef.current = document.documentElement.style.overflow;
+        document.documentElement.style.overflow = "hidden";
+      }
     }
   }, [active]);
 
-  function close() {
+  // Unmount: never leave a pending timer or a locked page behind.
+  useEffect(
+    () => () => {
+      cancelCloseTimer();
+      unlockScroll();
+    },
+    [],
+  );
+
+  function open(item: HospitalItem, trigger: HTMLButtonElement) {
+    cancelCloseTimer();
     const dialog = dialogRef.current;
-    if (!dialog) return;
-    // Play the closing animation, then actually close.
-    dialog.dataset.closing = "true";
-    const finish = () => {
-      delete dialog.dataset.closing;
-      if (dialog.open) dialog.close();
-      cleanUp();
-    };
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) finish();
-    else window.setTimeout(finish, 180);
+    if (dialog) delete dialog.dataset.closing;
+    triggerRef.current = trigger;
+    isOpenRef.current = true;
+    setActive(item);
   }
 
-  // Runs on every close path: unlock page scroll and return focus to the
-  // card that opened the dialog.
-  function cleanUp() {
-    document.documentElement.style.overflow = "";
+  function close() {
+    const dialog = dialogRef.current;
+    // Ignore repeated X / Esc presses while the closing animation runs.
+    if (!dialog || closeTimerRef.current !== null) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      finish();
+      return;
+    }
+    dialog.dataset.closing = "true";
+    closeTimerRef.current = window.setTimeout(finish, 180);
+  }
+
+  // The single place a close is completed, whichever way it started.
+  function finish() {
+    closeTimerRef.current = null;
+    isOpenRef.current = false;
+    const dialog = dialogRef.current;
+    if (dialog) {
+      delete dialog.dataset.closing;
+      if (dialog.open) dialog.close();
+    }
+    unlockScroll();
     setActive(null);
-    triggerRef.current?.focus();
+    const trigger = triggerRef.current;
+    if (trigger?.isConnected) trigger.focus();
   }
 
   return (
@@ -72,12 +118,9 @@ export function HospitalDirectory({ items, labels }: { items: HospitalItem[]; la
           <li key={h.id}>
             <button
               type="button"
-              onClick={(e) => {
-                triggerRef.current = e.currentTarget;
-                setActive(h);
-              }}
+              onClick={(e) => open(h, e.currentTarget)}
               aria-haspopup="dialog"
-              className="group flex h-full w-full flex-col items-start rounded-2xl border-2 border-transparent bg-bg p-6 text-left shadow-soft transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-brand active:scale-[0.99]"
+              className="group flex h-full w-full flex-col items-start rounded-2xl border-2 border-transparent bg-bg p-6 text-left shadow-soft transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-brand active:scale-[0.99] motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
             >
               {h.logo ? (
                 <Image src={h.logo} alt="" width={240} height={64} className="h-12 w-auto max-w-[13rem] object-contain object-left" />
@@ -93,10 +136,35 @@ export function HospitalDirectory({ items, labels }: { items: HospitalItem[]; la
         ))}
       </ul>
 
+      {/* Without JavaScript the cards cannot open the dialog, so the full
+          profiles are printed under the grid instead. */}
+      <noscript>
+        <div className="mt-10 space-y-8">
+          {items.map((h) => (
+            <div key={h.id} className="rounded-2xl bg-bg p-6">
+              <h3 className="text-xl font-semibold text-ink">{h.name}</h3>
+              <p className="mt-1 text-lg font-medium text-accent-strong">{h.city}</p>
+              {h.about ? <p className="mt-3 text-lg text-ink">{h.about}</p> : null}
+              {h.points.length ? (
+                <ul className="mt-3 list-disc space-y-1 pl-6 text-lg text-ink marker:text-brand">
+                  {h.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </noscript>
+
       <dialog
         ref={dialogRef}
         onClose={() => {
-          if (document.documentElement.style.overflow) cleanUp();
+          // Closed by the browser itself (not through close()): finish up once.
+          if (isOpenRef.current) {
+            cancelCloseTimer();
+            finish();
+          }
         }}
         onCancel={(e) => {
           e.preventDefault();

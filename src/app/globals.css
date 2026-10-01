@@ -35,7 +35,6 @@
   --color-on-accent: var(--on-accent);
 
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 html {
@@ -111,5 +110,8 @@ html[data-hero-cta="visible"] .after-hero {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .after-hero {
+    transition: none;
   }
 }

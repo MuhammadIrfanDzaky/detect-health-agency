@@ -22,6 +22,3 @@ export const hospitals: Hospital[] = [
   { id: "pantaiKL", name: "Pantai Hospital", city: "kualaLumpur", logo: "/partners/pantai-kl.png", photo: "/partners/photos/pantai-kl.webp" },
   { id: "pantaiMelaka", name: "Pantai Hospital", city: "melaka", logo: "/partners/pantai-melaka.png", photo: "/partners/photos/pantai-melaka.webp" },
 ];
-
-// North to south.
-export const cities: { key: CityKey }[] = [{ key: "penang" }, { key: "kualaLumpur" }, { key: "melaka" }];

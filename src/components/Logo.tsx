@@ -10,7 +10,7 @@ export function Logo({ size = "header" }: { size?: "header" | "footer" }) {
       alt="Detect Health Agency"
       width={429}
       height={114}
-      priority={size === "header"}
+      loading={size === "header" ? "eager" : "lazy"}
       className={size === "footer" ? "h-14 w-auto" : "h-11 w-auto"}
     />
   );

@@ -15,7 +15,7 @@ export function FinalCta() {
         <h2 id="cta-title" className="text-3xl leading-[1.15] font-semibold tracking-tight md:text-5xl">
           {t("cta.title")}
         </h2>
-        <p className="mt-4 text-xl text-white/90">{t("cta.body")}</p>
+        <p className="mt-4 text-xl">{t("cta.body")}</p>
         <div className="mt-9 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8">
           <ButtonLink
             href={whatsappUrl(locale)}
@@ -27,7 +27,7 @@ export function FinalCta() {
           >
             {t("common.ctaWhatsapp")}
           </ButtonLink>
-          <a href={site.phoneHref} className="inline-flex min-h-12 items-center text-xl font-semibold underline decoration-2 underline-offset-4">
+          <a href={site.phoneHref} className="inline-flex min-h-14 items-center text-xl font-semibold underline decoration-2 underline-offset-4">
             {t("common.orCall")} {site.phoneDisplay}
           </a>
         </div>
@@ -35,7 +35,7 @@ export function FinalCta() {
           href={site.consultationFormUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex min-h-12 items-center text-lg text-white/90 underline decoration-2 underline-offset-4 hover:text-white"
+          className="mt-6 inline-flex min-h-14 items-center text-lg underline decoration-2 underline-offset-4"
         >
           {t("common.ctaForm")}
           <span className="sr-only"> {t("common.opensNewTab")}</span>

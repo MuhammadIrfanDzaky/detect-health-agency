@@ -28,7 +28,7 @@ export function LocaleSwitcher({ className = "" }: { className?: string }) {
               scroll={false}
               aria-current={active ? "true" : undefined}
               aria-label={names[l]}
-              className={`inline-flex min-h-11 min-w-9 items-center justify-center px-1 font-semibold uppercase ${active ? "text-accent-strong underline decoration-2 underline-offset-[6px]" : "text-ink-soft hover:text-ink"}`}
+              className={`inline-flex min-h-14 min-w-14 items-center justify-center font-semibold uppercase underline decoration-2 underline-offset-[6px] ${active ? "text-accent-strong decoration-accent-strong" : "text-ink-soft decoration-rule hover:text-ink hover:decoration-accent"}`}
             >
               {l}
             </Link>

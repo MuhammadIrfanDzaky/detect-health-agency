@@ -8,12 +8,12 @@
     "hospitals": "Hospitals",
     "itinerary": "How It Works",
     "faq": "FAQ",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
     "language": "Language",
     "skipToContent": "Skip to main content",
     "call": "Call",
-    "closeMenuShort": "Close"
+    "closeMenuShort": "Close",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation"
   },
   "common": {
     "ctaWhatsapp": "Chat on WhatsApp",
@@ -25,7 +25,7 @@
   "hero": {
     "eyebrow": "Your medical travel partner to Malaysia",
     "title": "Treatment in Malaysia. Just bring your suitcase.",
-    "subtitle": "We find your doctor, arrange the appointment, and pick you up at the airport.",
+    "subtitle": "Free consultation. We find a doctor at one of 6 partner hospitals, book the visit, and meet you at the airport.",
     "photoAlt": "A doctor consulting with an elderly patient in her office"
   },
   "facts": {
@@ -153,7 +153,7 @@
         "points": [
           "Centres of excellence for cancer, heart, orthopaedics, and women's and children's health.",
           "More than 200 beds and more than 80 specialists.",
-          "A calm city close to Sumatra, convenient for regular check-ups."
+          "Complete care in a calm city setting."
         ]
       }
     },
@@ -161,7 +161,6 @@
     "viewDetails": "View details",
     "close": "Close",
     "detailsPending": "Full details for this hospital are coming soon. Ask us directly on WhatsApp.",
-    "cityLabel": "City",
     "buildingAlt": "The {name} building"
   },
   "itinerary": {
@@ -192,7 +191,7 @@
   },
   "travel": {
     "title": "Treatment and a family holiday in one trip",
-    "body": "Finish your check-up in the morning, then relax in Penang, Kuala Lumpur, or Melaka.",
+    "body": "If your check-up schedule and condition allow, spend the rest of the day relaxing in Penang, Kuala Lumpur, or Melaka.",
     "photoAlt": "A tour boat on the river in Melaka"
   },
   "checklist": {
@@ -200,9 +199,9 @@
     "note": "No need to remember it all. The DHA team checks it with you.",
     "groups": [
       {
-        "title": "Your body (the day before)",
+        "title": "Your body",
         "items": [
-          "Fast 8-10 hours before a blood test. Water is fine.",
+          "Follow the preparation instructions from your doctor or hospital. If a test needs fasting, we help confirm how long.",
           "Sleep well, at least 7 hours.",
           "Tell us if you take regular medication."
         ]
@@ -273,7 +272,8 @@
         "name": "Dewi Lestari",
         "role": "Women's health check at Pantai Hospital, Melaka. From Padang."
       }
-    ]
+    ],
+    "disclaimer": "Sample stories, not real patient testimonials."
   },
   "faq": {
     "title": "Frequently asked questions",
@@ -314,11 +314,11 @@
     "follow": "Follow us",
     "hours": "Opening hours",
     "hoursValue": "Monday-Saturday, 08:00-20:00 WIB",
-    "responseTime": "WhatsApp replies usually within 15 minutes",
     "rights": "All rights reserved.",
-    "phoneNote": "WhatsApp and phone",
     "email": "Email",
-    "address": "Address"
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone"
   },
   "floating": {
     "label": "Chat with DHA on WhatsApp",

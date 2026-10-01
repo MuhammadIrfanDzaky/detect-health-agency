@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { site } from "@/content/site";
 import "../globals.css";
@@ -10,12 +10,6 @@ import "../globals.css";
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
   display: "swap",
 });
 
@@ -65,10 +59,14 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
+  // Only the namespaces client components read (Navbar, LocaleSwitcher).
+  // Everything else is rendered on the server or passed down as props.
+  const { nav, common, floating } = await getMessages();
+
   return (
-    <html lang={locale} data-scroll-behavior="smooth" className={`${geist.variable} ${geistMono.variable}`}>
+    <html lang={locale} data-scroll-behavior="smooth" className={geist.variable}>
       <body className="min-h-screen">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={{ nav, common, floating }}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

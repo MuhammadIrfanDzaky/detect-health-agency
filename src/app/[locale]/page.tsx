@@ -27,7 +27,7 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
       <JsonLd description={t("meta.description")} locale={locale} />
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-surface focus:px-4 focus:py-2 focus:font-semibold focus:text-ink"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:inline-flex focus:min-h-14 focus:items-center focus:rounded-full focus:bg-bg focus:px-6 focus:text-lg focus:font-semibold focus:text-ink focus:shadow-soft"
       >
         {t("nav.skipToContent")}
       </a>

@@ -16,6 +16,7 @@ export function Testimonial() {
         labels={{
           title: t("testimonial.label"),
           badge: t("common.placeholderBadge"),
+          disclaimer: t("testimonial.disclaimer"),
           previous: t("testimonial.previous"),
           next: t("testimonial.next"),
           region: t("testimonial.region"),

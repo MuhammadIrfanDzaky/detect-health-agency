@@ -1,9 +1,9 @@
-# Detect Health Agency — Landing Page
+# Detect Health Agency: Landing Page
 
 Landing page for **CV Detect Health Agency (DHA)**, a medical travel facilitator for Indonesian patients going to Malaysia. Bilingual (Bahasa Indonesia default, English), statically generated.
 
-- **Stack:** Next.js 16 (App Router, SSG) · Tailwind CSS v4 · next-intl v4 · lucide-react
-- **Routes:** `/id`, `/en` (`/` redirects to `/id`), `/sitemap.xml`, `/robots.txt`
+- **Stack:** Next.js 16 (App Router, SSG) · Tailwind CSS v4 · next-intl v4 · Phosphor icons
+- **Routes:** `/id`, `/en` (`/` redirects to `/id`), `/sitemap.xml`, `/robots.txt`, share images at `/<locale>/opengraph-image` and `/<locale>/twitter-image` (built from `src/app/[locale]/opengraph-image.tsx`)
 - **Leads:** WhatsApp (`wa.me` with a prefilled message per language) and the existing Google Form. The site itself collects no data.
 
 ## Run locally
@@ -48,13 +48,13 @@ All six hospitals show as one grid of cards (logo, name, city, one-line specialt
 
 ## Placeholders still to replace
 
-Mock content is marked on the page with a **Contoh / Sample** badge.
+Mock content is marked on the page with a **Contoh / Sample** badge: on every testimonial card (plus the line "Contoh cerita, bukan testimoni pasien nyata"), on the FAQ heading, and next to the footer opening hours. Before a public launch, replace the testimonials with real, consented stories or remove the section.
 
 | Item | Where |
 |---|---|
 | 10 testimonials (invented names; need real patients with consent) | `messages/*.json` -> `testimonial.items` |
 | FAQ | `messages/*.json` -> `faq` |
-| Opening hours and WhatsApp response time | `messages/*.json` -> `footer.hoursValue`, `footer.responseTime` |
+| Opening hours (the WhatsApp response-time line was removed until DHA confirms one) | `messages/*.json` -> `footer.hoursValue` |
 | Photos (Unsplash stock, see below) | `src/content/photos.ts` |
 
 Search the code for `PLACEHOLDER` to find each spot.
@@ -69,9 +69,11 @@ Audience is adults 30+ and seniors, so accessibility decides over aesthetics:
 
 - Light theme only (white + DHA blue). No dark mode.
 - Body text 18px minimum, nothing below 16px. Contrast: body >= 7:1, white on blue >= 4.5:1.
-- Tap targets >= 56px. Links underlined. Icons always have a text label.
+- Tap targets >= 56px, including nav links, the language switch, icon buttons and footer links.
+- Text links are always underlined (a light underline that darkens on hover). Exceptions: the logo, icon-only buttons (they have `aria-label`), and pill-shaped CTA buttons.
+- Motion: dialog animation, card hover lift, button press and the `.after-hero` fade are all off under `prefers-reduced-motion`.
 - Sections alternate white and light blue, each heading starts with a short blue bar.
-- Hero answers "what is DHA" at once: photo with white fade, big WhatsApp button, visible phone number, then a blue strip with three facts.
+- Hero answers "what is DHA" at once: headline, "free consultation, 6 partner hospitals" in the subtitle, big WhatsApp button, visible phone number, then a blue strip with three facts. Desktop: photo with white fade on the right. Phones: text and button first, the photo below them.
 - Numbered steps for "how it works". No scroll animations.
 - Testimonials stay low-key: a smaller heading and one row of short cards with previous/next arrows (swipe on phones), not a highlight section.
 - No prices anywhere. "Free consultation and support" is fine (confirmed by DHA).
@@ -79,7 +81,7 @@ Audience is adults 30+ and seniors, so accessibility decides over aesthetics:
 
 ## Content rules
 
-- Do **not** advertise medical evacuation / ambulance or lab services — the related business permits (KBLI 86904, 86903) are not complete yet.
+- Do **not** advertise medical evacuation / ambulance or lab services. The related business permits (KBLI 86904, 86903) are not complete yet.
 - Legal identifiers (NIB, AHU, NPWP) belong on a future "Tentang Kami" page, not on Home.
 - `protected files/` holds confidential company documents. It is gitignored and must never be committed or deployed.
 
@@ -87,6 +89,8 @@ Audience is adults 30+ and seniors, so accessibility decides over aesthetics:
 
 - next-intl's `createNextIntlPlugin()` is intentionally not used. It eagerly loads `@swc/core` and `@parcel/watcher` for its experimental message extractor, which failed to load in this environment. `next.config.ts` declares the equivalent `turbopack.resolveAlias` for `next-intl/config` instead.
 - Locale detection from the browser language is off (`src/i18n/routing.ts`), so every visitor lands on Indonesian first.
+- Only the `nav`, `common` and `floating` message namespaces are sent to the browser (`NextIntlClientProvider` in `src/app/[locale]/layout.tsx`). Client components that need other text receive it as props from a server component. If a new client component calls `useTranslations`, add its namespace there.
+- Without JavaScript the page still works: the mobile menu is a native `<details>` (language switch inside), hospital profiles are printed in a `<noscript>` block, and all contact links are plain links.
 - Security headers (CSP, frame-ancestors, etc.) are set in `next.config.ts`.
 - `NEXT_PUBLIC_SITE_URL` sets the canonical URL, sitemap, and OG URLs (defaults to `http://localhost:3000`). Set it when a domain is chosen.
 - Project scope and launch gates are tracked in `PROJECT-SCOPE.md`.

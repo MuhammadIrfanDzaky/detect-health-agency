@@ -3,6 +3,7 @@ import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react/dist/ssr";
 import type { Locale } from "@/i18n/routing";
 import { site, whatsappUrl } from "@/content/site";
 import { Logo } from "./Logo";
+import { SampleBadge } from "./ui/Heading";
 
 // Contact details as label + value (no decorative icons). Social links use
 // the platforms' own logos, which people recognise faster than the words.
@@ -11,11 +12,12 @@ export function Footer() {
   const locale = useLocale() as Locale;
   const year = new Date().getFullYear();
   const newTab = t("common.opensNewTab");
-  const heading = "mb-4 text-xl font-semibold text-ink";
+  const heading = "text-xl font-semibold text-ink";
   const label = "text-base text-ink-soft";
-  const value = "text-lg font-medium text-ink underline-offset-4 hover:underline";
+  const value =
+    "inline-flex min-h-14 items-center text-lg font-medium text-ink underline decoration-rule decoration-2 underline-offset-4 hover:decoration-accent";
   const social =
-    "inline-flex size-12 items-center justify-center rounded-full bg-bg text-accent-strong transition-colors hover:bg-accent hover:text-on-accent";
+    "inline-flex size-14 items-center justify-center rounded-full bg-bg text-accent-strong transition-colors hover:bg-accent hover:text-on-accent motion-reduce:transition-none";
 
   return (
     <footer className="bg-tint px-4 pt-16 pb-28 sm:px-6">
@@ -26,14 +28,22 @@ export function Footer() {
         </div>
 
         <div className="md:col-span-4">
-          <h2 className={heading}>{t("footer.contact")}</h2>
-          <dl className="space-y-4">
+          <h2 className={`mb-4 ${heading}`}>{t("footer.contact")}</h2>
+          <dl className="space-y-3">
             <div>
-              <dt className={label}>{t("footer.phoneNote")}</dt>
+              <dt className={label}>{t("footer.whatsapp")}</dt>
               <dd>
                 <a href={whatsappUrl(locale)} target="_blank" rel="noopener noreferrer" className={value}>
                   {site.phoneDisplay}
                   <span className="sr-only"> {newTab}</span>
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className={label}>{t("footer.phone")}</dt>
+              <dd>
+                <a href={site.phoneHref} className={value}>
+                  {site.phoneDisplay}
                 </a>
               </dd>
             </div>
@@ -51,21 +61,23 @@ export function Footer() {
         </div>
 
         <div className="md:col-span-4">
-          {/* PLACEHOLDER: opening hours and response time */}
-          <h2 className={heading}>{t("footer.hours")}</h2>
+          {/* PLACEHOLDER: opening hours not confirmed by DHA yet */}
+          <div className="mb-4 flex flex-wrap items-center gap-3">
+            <h2 className={heading}>{t("footer.hours")}</h2>
+            <SampleBadge label={t("common.placeholderBadge")} />
+          </div>
           <p className="text-lg text-ink">{t("footer.hoursValue")}</p>
-          <p className="mt-1 text-lg text-ink-soft">{t("footer.responseTime")}</p>
 
-          <h2 className={`mt-10 ${heading}`}>{t("footer.follow")}</h2>
+          <h2 className={`mt-10 mb-4 ${heading}`}>{t("footer.follow")}</h2>
           <ul className="flex gap-3">
             <li>
               <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${newTab}`} title="Instagram" className={social}>
-                <InstagramLogo aria-hidden="true" size={26} />
+                <InstagramLogo aria-hidden="true" size={28} />
               </a>
             </li>
             <li>
               <a href={site.facebookUrl} target="_blank" rel="noopener noreferrer" aria-label={`Facebook ${newTab}`} title="Facebook" className={social}>
-                <FacebookLogo aria-hidden="true" size={26} />
+                <FacebookLogo aria-hidden="true" size={28} />
               </a>
             </li>
           </ul>

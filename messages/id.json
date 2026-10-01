@@ -8,12 +8,12 @@
     "hospitals": "Rumah Sakit",
     "itinerary": "Cara Kerja",
     "faq": "Tanya Jawab",
-    "openMenu": "Buka menu",
-    "closeMenu": "Tutup menu",
     "language": "Bahasa",
     "skipToContent": "Langsung ke isi halaman",
     "call": "Telepon",
-    "closeMenuShort": "Tutup"
+    "closeMenuShort": "Tutup",
+    "mainNavigation": "Navigasi utama",
+    "mobileNavigation": "Navigasi seluler"
   },
   "common": {
     "ctaWhatsapp": "Chat WhatsApp",
@@ -25,7 +25,7 @@
   "hero": {
     "eyebrow": "Mitra perjalanan medis ke Malaysia",
     "title": "Berobat ke Malaysia, tinggal bawa koper.",
-    "subtitle": "Kami bantu carikan dokter, atur jadwal, dan jemput Anda di bandara.",
+    "subtitle": "Konsultasi gratis. Kami carikan dokter di 6 rumah sakit mitra, atur jadwalnya, dan jemput Anda di bandara.",
     "photoAlt": "Dokter sedang berkonsultasi dengan pasien lansia di ruang praktik"
   },
   "facts": {
@@ -153,7 +153,7 @@
         "points": [
           "Pusat unggulan kanker, jantung, ortopedi, serta kesehatan wanita dan anak.",
           "Lebih dari 200 tempat tidur dan lebih dari 80 dokter spesialis.",
-          "Kota yang tenang dan dekat dari Sumatra, nyaman untuk kontrol rutin."
+          "Perawatan lengkap di lingkungan kota yang tenang."
         ]
       }
     },
@@ -161,7 +161,6 @@
     "viewDetails": "Lihat detail",
     "close": "Tutup",
     "detailsPending": "Informasi lengkap rumah sakit ini akan segera kami tambahkan. Tanyakan langsung lewat WhatsApp.",
-    "cityLabel": "Kota",
     "buildingAlt": "Gedung {name}"
   },
   "itinerary": {
@@ -192,7 +191,7 @@
   },
   "travel": {
     "title": "Berobat sekaligus liburan bersama keluarga",
-    "body": "Selesai check-up di pagi hari, sore harinya bisa santai di Penang, Kuala Lumpur, atau Melaka.",
+    "body": "Bila jadwal pemeriksaan dan kondisi Anda memungkinkan, sisa hari bisa dipakai bersantai di Penang, Kuala Lumpur, atau Melaka.",
     "photoAlt": "Perahu wisata menyusuri sungai di kota Melaka"
   },
   "checklist": {
@@ -200,9 +199,9 @@
     "note": "Tidak perlu diingat sendiri. Tim DHA bantu cek satu per satu.",
     "groups": [
       {
-        "title": "Persiapan tubuh (sehari sebelumnya)",
+        "title": "Persiapan tubuh",
         "items": [
-          "Puasa 8-10 jam sebelum tes darah. Air putih boleh.",
+          "Ikuti petunjuk persiapan dari dokter atau rumah sakit. Bila pemeriksaan perlu puasa, kami bantu pastikan berapa lama.",
           "Tidur cukup, minimal 7 jam.",
           "Beri tahu kami bila Anda minum obat rutin."
         ]
@@ -273,7 +272,8 @@
         "name": "Dewi Lestari",
         "role": "Pemeriksaan kesehatan wanita di Pantai Hospital, Melaka. Dari Padang."
       }
-    ]
+    ],
+    "disclaimer": "Contoh cerita, bukan testimoni pasien nyata."
   },
   "faq": {
     "title": "Pertanyaan yang sering diajukan",
@@ -314,11 +314,11 @@
     "follow": "Ikuti kami",
     "hours": "Jam operasional",
     "hoursValue": "Senin-Sabtu, 08.00-20.00 WIB",
-    "responseTime": "Balasan WhatsApp biasanya dalam 15 menit",
     "rights": "Hak cipta dilindungi.",
-    "phoneNote": "WhatsApp dan telepon",
     "email": "Email",
-    "address": "Alamat"
+    "address": "Alamat",
+    "whatsapp": "WhatsApp",
+    "phone": "Telepon"
   },
   "floating": {
     "label": "Chat dengan DHA di WhatsApp",
