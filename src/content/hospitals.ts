@@ -15,12 +15,12 @@ export type Hospital = {
 };
 
 export const hospitals: Hospital[] = [
-  { id: "sunwayPenang", name: "Sunway Medical Centre Penang", city: "penang", logo: "/partners/sunway-penang.png", photo: "/partners/photos/sunway-penang.webp" },
-  { id: "northernHeart", name: "Northern Heart Hospital Penang", city: "penang", logo: "/partners/northern-heart-penang.png", photo: "/partners/photos/northern-heart-penang.webp" },
-  { id: "optimax", name: "Optimax Eye Specialist Hospital Penang", city: "penang", logo: "/partners/optimax-penang.png", photo: "/partners/photos/optimax-penang.webp" },
-  { id: "gleneaglesKL", name: "Gleneagles Kuala Lumpur", city: "kualaLumpur", logo: "/partners/gleneagles-kl.png", photo: "/partners/photos/gleneagles-kl.webp" },
-  { id: "pantaiKL", name: "Pantai Hospital Kuala Lumpur", city: "kualaLumpur", logo: "/partners/pantai-kl.png", photo: "/partners/photos/pantai-kl.webp" },
-  { id: "pantaiMelaka", name: "Pantai Hospital Melaka", city: "melaka", logo: "/partners/pantai-melaka.png", photo: "/partners/photos/pantai-melaka.webp" },
+  { id: "sunwayPenang", name: "Sunway Medical Centre", city: "penang", logo: "/partners/sunway-penang.png", photo: "/partners/photos/sunway-penang.webp" },
+  { id: "northernHeart", name: "Northern Heart Hospital", city: "penang", logo: "/partners/northern-heart-penang.png", photo: "/partners/photos/northern-heart-penang.webp" },
+  { id: "optimax", name: "Optimax Eye Specialist Hospital", city: "penang", logo: "/partners/optimax-penang.png", photo: "/partners/photos/optimax-penang.webp" },
+  { id: "gleneaglesKL", name: "Gleneagles Hospital", city: "kualaLumpur", logo: "/partners/gleneagles-kl.png", photo: "/partners/photos/gleneagles-kl.webp" },
+  { id: "pantaiKL", name: "Pantai Hospital", city: "kualaLumpur", logo: "/partners/pantai-kl.png", photo: "/partners/photos/pantai-kl.webp" },
+  { id: "pantaiMelaka", name: "Pantai Hospital", city: "melaka", logo: "/partners/pantai-melaka.png", photo: "/partners/photos/pantai-melaka.webp" },
 ];
 
 // North to south.
