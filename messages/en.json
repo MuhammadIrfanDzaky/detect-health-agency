@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Detect Health Agency | Your Trusted Medical Partner to Malaysia",
+    "description": "Get treatment or a medical check-up in Malaysia without the hassle. Consultation, doctor booking, and airport pickup are free with DHA. Partnered with Pantai, Sunway, Gleneagles, and more."
+  },
+  "nav": {
+    "services": "Services",
+    "hospitals": "Hospitals",
+    "itinerary": "How It Works",
+    "faq": "FAQ",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to main content",
+    "call": "Call",
+    "closeMenuShort": "Close"
+  },
+  "common": {
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaForm": "Fill in the consultation form",
+    "orCall": "Or call",
+    "placeholderBadge": "Sample",
+    "opensNewTab": "(opens in a new tab)"
+  },
+  "hero": {
+    "eyebrow": "Your medical travel partner to Malaysia",
+    "title": "Treatment in Malaysia. Just bring your suitcase.",
+    "subtitle": "We find your doctor, arrange the appointment, and pick you up at the airport.",
+    "photoAlt": "A doctor consulting with an elderly patient in her office"
+  },
+  "facts": {
+    "label": "DHA at a glance",
+    "items": [
+      {
+        "title": "Free consultation",
+        "body": "DHA's support costs you nothing."
+      },
+      {
+        "title": "6 partner hospitals",
+        "body": "In Penang, Kuala Lumpur, and Melaka."
+      },
+      {
+        "title": "Airport pickup",
+        "body": "Taken straight to the hospital or hotel."
+      }
+    ]
+  },
+  "care": {
+    "title": "How we help you",
+    "body": "DHA is an official partner of hospitals in Malaysia. You focus on your health. We take care of the rest.",
+    "photoAlt": "A meeting point sign in an airport arrivals terminal",
+    "groups": [
+      {
+        "title": "Before you travel",
+        "items": [
+          {
+            "title": "Treatment plan consultation",
+            "body": "By WhatsApp, phone, or the form."
+          },
+          {
+            "title": "The right doctor and hospital",
+            "body": "Chosen for your medical needs."
+          },
+          {
+            "title": "Doctor appointments",
+            "body": "Including changes when needed."
+          },
+          {
+            "title": "Preparation list",
+            "body": "Documents, schedule, and health prep."
+          }
+        ]
+      },
+      {
+        "title": "When you arrive in Malaysia",
+        "items": [
+          {
+            "title": "Airport pickup",
+            "body": "Taken to the hospital or hotel."
+          },
+          {
+            "title": "Hotel recommendations",
+            "body": "Comfortable and close to the hospital."
+          }
+        ]
+      }
+    ]
+  },
+  "hospitals": {
+    "title": "Our partner hospitals",
+    "body": "Six leading hospitals in three cities. We help you choose the right one.",
+    "cities": {
+      "penang": "Penang",
+      "kualaLumpur": "Kuala Lumpur",
+      "melaka": "Melaka"
+    },
+    "photoAlt": {
+      "penang": "Trishaws and visitors on a street in George Town, Penang",
+      "kualaLumpur": "The Petronas Twin Towers in Kuala Lumpur",
+      "melaka": "The historic red church in central Melaka"
+    },
+    "specialties": {
+      "pantaiMelaka": "Cancer, heart, orthopaedics, women's and children's health",
+      "sunwayPenang": "Modern facilities and advanced surgery",
+      "northernHeart": "A hospital dedicated to the heart and blood vessels",
+      "optimax": "Eye care and eye surgery (LASIK)",
+      "gleneaglesKL": "Complex, neuro, and cardiac cases",
+      "pantaiKL": "Oncology, orthopaedics, women's and children's health"
+    },
+    "details": {
+      "pantaiMelaka": {
+        "about": "Melaka's leading referral hospital, part of IHH Healthcare, one of the largest hospital networks in Asia.",
+        "points": [
+          "More than 200 beds.",
+          "More than 80 internationally accredited specialists.",
+          "A calm city setting."
+        ]
+      },
+      "northernHeart": {
+        "about": "The first dedicated heart hospital in northern Malaysia.",
+        "points": [
+          "Cardiology, heart and lung surgery, and vascular procedures.",
+          "A modern cath lab and dedicated cardiac operating theatres.",
+          "Care from senior consultant cardiologists."
+        ]
+      }
+    },
+    "count": "{count, plural, one {# hospital} other {# hospitals}}",
+    "more": "More details"
+  },
+  "itinerary": {
+    "title": "How it works, from start to finish",
+    "stepLabel": "Step",
+    "steps": [
+      {
+        "title": "Contact us",
+        "body": "Tell us your concerns and plans by WhatsApp or phone. Free."
+      },
+      {
+        "title": "We arrange the doctor",
+        "body": "We choose the hospital and specialist, then book the appointment."
+      },
+      {
+        "title": "Fly in and get picked up",
+        "body": "Our team meets you at the airport and takes you to the hospital or hotel."
+      },
+      {
+        "title": "Treatment or check-up",
+        "body": "Medical check-up (MCU) results can be ready the same day."
+      },
+      {
+        "title": "Rest or explore",
+        "body": "Enjoy the rest of your time with your family."
+      }
+    ]
+  },
+  "travel": {
+    "title": "Treatment and a family holiday in one trip",
+    "body": "Finish your check-up in the morning, then relax in Penang, Kuala Lumpur, or Melaka.",
+    "photoAlt": "A tour boat on the river in Melaka"
+  },
+  "checklist": {
+    "title": "What to prepare before you go",
+    "note": "No need to remember it all. The DHA team checks it with you.",
+    "groups": [
+      {
+        "title": "Your body (the day before)",
+        "items": [
+          "Fast 8-10 hours before a blood test. Water is fine.",
+          "Sleep well, at least 7 hours.",
+          "Tell us if you take regular medication."
+        ]
+      },
+      {
+        "title": "Documents to bring",
+        "items": [
+          "Passport valid for at least 6 months.",
+          "Previous results, such as lab tests or X-rays.",
+          "Flight tickets and doctor appointment."
+        ]
+      }
+    ]
+  },
+  "testimonial": {
+    "label": "Patient story",
+    "quote": "From booking the doctor to the airport pickup, everything was handled. I just focused on my treatment.",
+    "name": "Rahmawati Siregar",
+    "role": "Check-up patient in Penang, from Medan"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Are DHA's consultation and support free?",
+        "a": "Yes. Consultation, doctor appointments, and airport pickup cost nothing. Medical fees are paid directly to the hospital."
+      },
+      {
+        "q": "What about treatment costs?",
+        "a": "We share treatment and check-up cost information during your consultation, based on the hospital and your needs."
+      },
+      {
+        "q": "Which hospitals can I choose from?",
+        "a": "Six partner hospitals in Penang, Kuala Lumpur, and Melaka. We help you choose the right one."
+      },
+      {
+        "q": "How long from consultation to departure?",
+        "a": "It depends on the doctor's availability and your needs. Our team gives you an estimate during the consultation."
+      },
+      {
+        "q": "Does DHA help with hotels?",
+        "a": "Yes. We recommend hotels close to the hospital."
+      },
+      {
+        "q": "Which documents should I prepare?",
+        "a": "A passport valid for at least 6 months, previous results if available, and your tickets and doctor schedule."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready for a consultation?",
+    "body": "Contact the DHA team now. The consultation is free."
+  },
+  "footer": {
+    "tagline": "Your Trusted Medical Partner to Malaysia",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "hours": "Opening hours",
+    "hoursValue": "Monday-Saturday, 08:00-20:00 WIB",
+    "responseTime": "WhatsApp replies usually within 15 minutes",
+    "rights": "All rights reserved.",
+    "phoneNote": "WhatsApp and phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "floating": {
+    "label": "Chat with DHA on WhatsApp",
+    "short": "WhatsApp"
+  }
+}

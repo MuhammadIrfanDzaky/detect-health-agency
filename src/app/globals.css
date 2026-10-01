@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/*
+  Audience: adults 30+ and seniors. Light theme only (white + DHA blue),
+  large type, high contrast (body >= 7:1), large touch targets, minimal motion.
+  --brand is the exact DHA logo blue (#4A90E2). It is too light for white
+  text (3.3:1), so buttons, the facts strip and links use darker shades of
+  the same hue: --accent (white text 5.8:1) and --accent-strong (7.8:1).
+  Shape rule: interactive elements are full pills, media and panels use
+  rounded-2xl (16px).
+*/
+:root {
+  --brand: #4a90e2;
+  --accent: #1e65b9;
+  --accent-strong: #185295;
+  --bg: #ffffff;
+  --tint: #eef5fd;
+  --tint-strong: #dbe9fa;
+  --ink: #0b1b33;
+  --ink-soft: #33415a;
+  --rule: #cfdbe9;
+  --on-accent: #ffffff;
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-bg: var(--bg);
+  --color-tint: var(--tint);
+  --color-tint-strong: var(--tint-strong);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-rule: var(--rule);
+  --color-on-accent: var(--on-accent);
+
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Hidden while the hero WhatsApp button is on screen (see HeroCtaWatcher). */
+.after-hero {
+  transition: opacity 200ms ease-out, visibility 200ms;
+}
+html[data-hero-cta="visible"] .after-hero {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@utility shadow-soft {
+  box-shadow: 0 20px 44px -26px rgb(24 82 149 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

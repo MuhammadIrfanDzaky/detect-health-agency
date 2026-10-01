@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Detect Health Agency | Mitra Terpercaya Perjalanan Medis ke Malaysia",
+    "description": "Berobat atau medical check-up ke Malaysia tanpa ribet. Konsultasi, booking dokter, dan jemput bandara gratis bersama DHA. Mitra Pantai, Sunway, Gleneagles, dan lainnya."
+  },
+  "nav": {
+    "services": "Layanan",
+    "hospitals": "Rumah Sakit",
+    "itinerary": "Cara Kerja",
+    "faq": "Tanya Jawab",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "language": "Bahasa",
+    "skipToContent": "Langsung ke isi halaman",
+    "call": "Telepon",
+    "closeMenuShort": "Tutup"
+  },
+  "common": {
+    "ctaWhatsapp": "Chat WhatsApp",
+    "ctaForm": "Isi formulir konsultasi",
+    "orCall": "Atau telepon",
+    "placeholderBadge": "Contoh",
+    "opensNewTab": "(buka di tab baru)"
+  },
+  "hero": {
+    "eyebrow": "Mitra perjalanan medis ke Malaysia",
+    "title": "Berobat ke Malaysia, tinggal bawa koper.",
+    "subtitle": "Kami bantu carikan dokter, atur jadwal, dan jemput Anda di bandara.",
+    "photoAlt": "Dokter sedang berkonsultasi dengan pasien lansia di ruang praktik"
+  },
+  "facts": {
+    "label": "DHA dalam singkat",
+    "items": [
+      {
+        "title": "Konsultasi gratis",
+        "body": "Pendampingan dari DHA tidak dipungut biaya."
+      },
+      {
+        "title": "6 rumah sakit mitra",
+        "body": "Di Penang, Kuala Lumpur, dan Melaka."
+      },
+      {
+        "title": "Dijemput di bandara",
+        "body": "Langsung diantar ke rumah sakit atau hotel."
+      }
+    ]
+  },
+  "care": {
+    "title": "Apa saja yang kami bantu",
+    "body": "DHA adalah mitra resmi rumah sakit di Malaysia. Anda cukup fokus pada kesehatan. Urusan lainnya kami bantu.",
+    "photoAlt": "Papan titik temu di terminal kedatangan bandara",
+    "groups": [
+      {
+        "title": "Sebelum berangkat",
+        "items": [
+          {
+            "title": "Konsultasi rencana berobat",
+            "body": "Lewat WhatsApp, telepon, atau formulir."
+          },
+          {
+            "title": "Cari dokter dan rumah sakit",
+            "body": "Dipilih sesuai kebutuhan medis Anda."
+          },
+          {
+            "title": "Atur jadwal dokter",
+            "body": "Termasuk mengubah jadwal bila perlu."
+          },
+          {
+            "title": "Daftar persiapan",
+            "body": "Dokumen, jadwal, dan persiapan tubuh."
+          }
+        ]
+      },
+      {
+        "title": "Setibanya di Malaysia",
+        "items": [
+          {
+            "title": "Jemput di bandara",
+            "body": "Diantar ke rumah sakit atau hotel."
+          },
+          {
+            "title": "Rekomendasi hotel",
+            "body": "Nyaman dan dekat rumah sakit."
+          }
+        ]
+      }
+    ]
+  },
+  "hospitals": {
+    "title": "Rumah sakit mitra kami",
+    "body": "Enam rumah sakit unggulan di tiga kota. Kami bantu pilihkan yang paling sesuai untuk Anda.",
+    "cities": {
+      "penang": "Penang",
+      "kualaLumpur": "Kuala Lumpur",
+      "melaka": "Melaka"
+    },
+    "photoAlt": {
+      "penang": "Becak dan wisatawan di jalan kota tua George Town, Penang",
+      "kualaLumpur": "Menara Kembar Petronas di Kuala Lumpur",
+      "melaka": "Gereja merah bersejarah di pusat kota Melaka"
+    },
+    "specialties": {
+      "pantaiMelaka": "Kanker, jantung, ortopedi, kesehatan wanita dan anak",
+      "sunwayPenang": "Fasilitas modern dan bedah canggih",
+      "northernHeart": "Rumah sakit khusus jantung dan pembuluh darah",
+      "optimax": "Perawatan dan bedah mata (LASIK)",
+      "gleneaglesKL": "Kasus kompleks, saraf, dan jantung",
+      "pantaiKL": "Kanker, ortopedi, kesehatan wanita dan anak"
+    },
+    "details": {
+      "pantaiMelaka": {
+        "about": "Rumah sakit rujukan utama di Melaka, bagian dari IHH Healthcare, salah satu jaringan rumah sakit terbesar di Asia.",
+        "points": [
+          "Lebih dari 200 tempat tidur.",
+          "Lebih dari 80 dokter spesialis berakreditasi internasional.",
+          "Lingkungan kota yang tenang."
+        ]
+      },
+      "northernHeart": {
+        "about": "Rumah sakit khusus jantung pertama di utara Malaysia.",
+        "points": [
+          "Kardiologi, bedah jantung dan paru, serta tindakan pembuluh darah.",
+          "Cath Lab modern dan ruang operasi khusus jantung.",
+          "Ditangani dokter konsultan jantung senior."
+        ]
+      }
+    },
+    "count": "{count} rumah sakit",
+    "more": "Selengkapnya"
+  },
+  "itinerary": {
+    "title": "Cara kerjanya, dari awal sampai pulang",
+    "stepLabel": "Langkah",
+    "steps": [
+      {
+        "title": "Hubungi kami",
+        "body": "Ceritakan keluhan dan rencana Anda lewat WhatsApp atau telepon. Gratis."
+      },
+      {
+        "title": "Kami atur dokter dan jadwal",
+        "body": "Kami pilihkan rumah sakit dan dokter spesialis, lalu pesan jadwalnya."
+      },
+      {
+        "title": "Berangkat dan dijemput",
+        "body": "Tim kami menunggu di bandara dan mengantar Anda ke rumah sakit atau hotel."
+      },
+      {
+        "title": "Berobat atau medical check-up",
+        "body": "Hasil medical check-up (MCU) bisa keluar di hari yang sama."
+      },
+      {
+        "title": "Istirahat atau jalan-jalan",
+        "body": "Sisa waktunya bisa Anda nikmati bersama keluarga."
+      }
+    ]
+  },
+  "travel": {
+    "title": "Berobat sekaligus liburan bersama keluarga",
+    "body": "Selesai check-up di pagi hari, sore harinya bisa santai di Penang, Kuala Lumpur, atau Melaka.",
+    "photoAlt": "Perahu wisata menyusuri sungai di kota Melaka"
+  },
+  "checklist": {
+    "title": "Yang perlu disiapkan sebelum berangkat",
+    "note": "Tidak perlu diingat sendiri. Tim DHA bantu cek satu per satu.",
+    "groups": [
+      {
+        "title": "Persiapan tubuh (sehari sebelumnya)",
+        "items": [
+          "Puasa 8-10 jam sebelum tes darah. Air putih boleh.",
+          "Tidur cukup, minimal 7 jam.",
+          "Beri tahu kami bila Anda minum obat rutin."
+        ]
+      },
+      {
+        "title": "Dokumen yang dibawa",
+        "items": [
+          "Paspor yang masih berlaku minimal 6 bulan.",
+          "Hasil pemeriksaan lama, seperti hasil lab atau rontgen.",
+          "Tiket pesawat dan jadwal dokter."
+        ]
+      }
+    ]
+  },
+  "testimonial": {
+    "label": "Cerita pasien",
+    "quote": "Dari booking dokter sampai dijemput di bandara, semuanya diurus. Saya cukup fokus berobat.",
+    "name": "Rahmawati Siregar",
+    "role": "Pasien medical check-up di Penang, dari Medan"
+  },
+  "faq": {
+    "title": "Pertanyaan yang sering diajukan",
+    "items": [
+      {
+        "q": "Apakah konsultasi dan pendampingan DHA gratis?",
+        "a": "Ya. Konsultasi, pemesanan jadwal dokter, dan penjemputan bandara tidak dipungut biaya. Biaya medis dibayar langsung ke rumah sakit."
+      },
+      {
+        "q": "Bagaimana dengan biaya pengobatan?",
+        "a": "Informasi biaya pengobatan dan check-up kami sampaikan saat konsultasi, sesuai rumah sakit dan kebutuhan Anda."
+      },
+      {
+        "q": "Rumah sakit mana saja yang bisa dipilih?",
+        "a": "Enam rumah sakit mitra di Penang, Kuala Lumpur, dan Melaka. Kami bantu pilihkan yang paling sesuai."
+      },
+      {
+        "q": "Berapa lama dari konsultasi sampai berangkat?",
+        "a": "Tergantung jadwal dokter dan kebutuhan Anda. Tim kami memberi perkiraan waktunya saat konsultasi."
+      },
+      {
+        "q": "Apakah DHA membantu urusan hotel?",
+        "a": "Ya. Kami memberi rekomendasi hotel yang dekat dengan rumah sakit."
+      },
+      {
+        "q": "Dokumen apa yang perlu disiapkan?",
+        "a": "Paspor yang berlaku minimal 6 bulan, hasil pemeriksaan sebelumnya bila ada, serta tiket dan jadwal dokter."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Siap berkonsultasi?",
+    "body": "Hubungi tim DHA sekarang. Konsultasi gratis."
+  },
+  "footer": {
+    "tagline": "Mitra Terpercaya Perjalanan Medis ke Malaysia",
+    "contact": "Kontak",
+    "follow": "Ikuti kami",
+    "hours": "Jam operasional",
+    "hoursValue": "Senin-Sabtu, 08.00-20.00 WIB",
+    "responseTime": "Balasan WhatsApp biasanya dalam 15 menit",
+    "rights": "Hak cipta dilindungi.",
+    "phoneNote": "WhatsApp dan telepon",
+    "email": "Email",
+    "address": "Alamat"
+  },
+  "floating": {
+    "label": "Chat dengan DHA di WhatsApp",
+    "short": "Chat WhatsApp"
+  }
+}
